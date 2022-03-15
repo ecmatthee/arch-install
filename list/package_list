@@ -1,0 +1,161 @@
+# System - Kernel
+base
+linux
+linux-firmware
+
+# System - Base
+base-devel
+sudo
+pacman-contrib
+
+efibootmgr
+grub
+ntfs-3g
+os-prober
+
+# System - Network
+bluez
+bluez-utils
+dhcp
+iwd
+
+# System - DE
+kitty
+libnotify
+sway
+swaylock
+swayidle
+grim
+mako
+slurp
+wf-recorder
+wl-copy
+#xorg-xrandr#Needed for something? IDK.
+
+# System - Shell
+zsh
+zsh-syntax-highlighting
+zsh-autosuggestions
+
+# System - Sound
+pipewire
+wireplumber
+gst-plugin-pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+pulsemixer
+
+# System - Man
+man-db
+man-pages
+texinfo
+
+# System - Fonts
+adobe-source-han-sans-otc-fonts
+adobe-source-han-serif-otc-fonts
+noto-fonts
+noto-fonts-extra
+noto-fonts-emoji
+ttf-dejavu
+ttf-liberation
+
+# System - Compression
+unrar
+
+# Dev - Lang
+dart
+fpc
+gcc
+jre-openjdk
+lua
+python
+
+# Dev - Frameworks
+
+# Dev - Database
+sqlite
+
+# Dev - IDE
+autopep8
+bash_language_server
+eslint
+lua_language_server
+libstdc++5
+python-lsp-server
+python-isort
+python-pydocstyle
+rust-analyzer
+shellcheck
+texlab
+
+# Dev - Debug
+strace
+
+# Lang Packages - Python
+pyhton-alembic
+pyhton-flask
+python-flask-mitigrate
+python-flask-sqlalchemy
+python-flask-wtf
+python-sqlalchemy
+python-wtforms
+
+# Utils
+aria2
+bat
+bmon
+bpytop
+cloc
+duf
+exa
+fd
+ffmpeg
+ffmpegthumbnailer
+fzf
+git
+gnupg
+htop
+hyperfine
+jq
+mtr
+ncdu
+nethogs
+#neofetch
+openssh
+parted
+pass
+pass-otp
+ranger
+reflector
+rclone
+ripgrep
+rmlint
+rsync
+syncthing
+the_silver_searcher
+tmux
+mat2
+wget
+youtube-dl
+zps
+
+# cli-app
+calcurse
+cmus
+imv
+mpv
+ranger
+taskell
+zathura
+zathura-pdf-mupdf
+
+# GUI-app
+chromium
+firefox-developer-edition
+kdenlive
+libreoffice-fresh
+
+# Emulation
+mgba-sdl
+mgba-qt
