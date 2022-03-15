@@ -19,13 +19,16 @@ declare_globals() {
 }
 
 package_install() {
-	sed -e "/^#/d" -e "s/#.*//" "${package_list}" | pacman -S --needed -
+	sed -e "/^#/d" -e "s/#.*//" "${package_list}" | sudo pacman -S --needed -
 	sed -e "/^#/d" -e "s/#.*//" "${aur_list}" | paru -S --needed -
 }
 
 system_setup() {
-	systemctl --user enable pipewire.service
-    systemctl --user enable pipewire-pulse.service
+	for file in "${script_dir}"/setup_scripts/*.sh; do
+		chmod +x "${file}"
+		bash "${file}"
+		chmod -x "${file}"
+	done
 }
 
 finish() {
