@@ -16,7 +16,7 @@ declare_globals() {
 	script_dir="$(dirname "$(readlink -f "$0")")"
 	package_list="$script_dir/list/package_list"
 	aur_list="$script_dir/list/aur_list"
-	config_repo=""
+	config_repo="git@github.com:ecmatthee/dotfiles.git"
 }
 
 package_install() {
