@@ -29,7 +29,7 @@ grim
 mako
 slurp
 wf-recorder
-wl-copy
+wl-clipboard
 #xorg-xrandr#Needed for something? IDK.
 
 # System - Shell
@@ -78,10 +78,9 @@ sqlite
 
 # Dev - IDE
 autopep8
-bash_language_server
+bash-language-server
 eslint
-lua_language_server
-libstdc++5
+lua-language-server
 python-lsp-server
 python-isort
 python-pydocstyle
@@ -93,9 +92,9 @@ texlab
 strace
 
 # Lang Packages - Python
-pyhton-alembic
-pyhton-flask
-python-flask-mitigrate
+python-alembic
+python-flask
+python-flask-migrate
 python-flask-sqlalchemy
 python-flask-wtf
 python-sqlalchemy
