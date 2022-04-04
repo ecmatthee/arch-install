@@ -31,6 +31,8 @@ system_setup() {
 }
 
 get_config() {
+	mkdir ~/.config
+	cd ~/.config
 	git clone "${config_repo}" 
 }
 
