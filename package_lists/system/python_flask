@@ -1,0 +1,7 @@
+python-alembic
+python-flask
+python-flask-migrate
+python-flask-sqlalchemy
+python-flask-wtf
+python-sqlalchemy
+python-wtforms

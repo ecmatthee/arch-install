@@ -1,0 +1,7 @@
+pipewire
+wireplumber
+gst-plugin-pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+pulsemixer

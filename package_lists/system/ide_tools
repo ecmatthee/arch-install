@@ -1,0 +1,10 @@
+autopep8
+bash-language-server
+eslint
+lua-language-server
+python-lsp-server
+python-isort
+python-pydocstyle
+rust-analyzer
+shellcheck
+texlab

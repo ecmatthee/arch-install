@@ -1,0 +1,24 @@
+# Sway
+sway
+swaylock
+swayidle
+
+# Terminal Emulator
+kitty
+tmux
+
+# Notification
+libnotify
+mako
+
+# Screen Capturing
+grim
+slurp
+wf-recorder
+wl-clipboard
+
+# File Browser
+ranger
+ffmpegthumbnailer
+
+#xorg-xrandr#Needed for something? IDK.

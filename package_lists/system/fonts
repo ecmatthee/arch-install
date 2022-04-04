@@ -1,0 +1,12 @@
+# Latin Script
+noto-fonts
+noto-fonts-extra
+ttf-dejavu
+ttf-liberation
+
+# Chinese, Japanese, Korean, Vietnamese
+adobe-source-han-sans-otc-fonts
+adobe-source-han-serif-otc-fonts
+
+# Emoji
+noto-fonts-emoji

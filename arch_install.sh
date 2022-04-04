@@ -37,10 +37,10 @@ install_sys() {
 	# Pre-install setup
     reflector --verbose --latest 20 ---protocol https -sort rate --save /etc/pacman.d/mirrorlist
 
-	# Pacstrap
-    pacstrap /mnt base linux linuxfirmware
+	# pacstrap
+	sed -e "/^#/d" -e "s/#.*//" "${package_list}" | pacstrap /mnt -
 
-	# Fstab
+	# fstab
     genfstab -U /mnt >> /mnt/etc/fstab
 
 	# Timezone

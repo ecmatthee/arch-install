@@ -14,14 +14,12 @@ shell_settings() {
 
 declare_globals() {
 	script_dir="$(dirname "$(readlink -f "$0")")"
-	package_list="$script_dir/list/package_list"
-	aur_list="$script_dir/list/aur_list"
 	config_repo="git@github.com:ecmatthee/dotfiles.git"
 }
 
 package_install() {
-	sed -e "/^#/d" -e "s/#.*//" "${package_list}" | sudo pacman -S --needed -
-	sed -e "/^#/d" -e "s/#.*//" "${aur_list}" | paru -S --needed -
+	cat "${script_dir}"/package_lists/system/* | sed -e "/^#/d" -e "s/#.*//" - | sudo pacman -S --needed -
+	cat "${script_dir}"/package_lists/aur/* | sed -e "/^#/d" -e "s/#.*//" - | paru -S --needed -
 }
 
 system_setup() {

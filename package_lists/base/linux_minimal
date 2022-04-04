@@ -1,0 +1,9 @@
+# System - Kernel
+base
+linux
+linux-firmware
+
+# System - Utils
+base-devel
+sudo
+pacman-contrib
