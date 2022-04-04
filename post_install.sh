@@ -3,7 +3,9 @@
 main() {
 	shell_settings
 	declare_globals
+	package_install
 	system_setup
+	get_config
 }
 
 shell_settings() {

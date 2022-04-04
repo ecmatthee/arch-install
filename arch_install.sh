@@ -3,6 +3,9 @@
 main() {
     shell_settings
     declare_globals
+	network_setup
+	partition
+	install_sys
 }
 
 shell_settings() {
@@ -17,6 +20,7 @@ declare_globals() {
     locale="en_US.UTF-8"
     hostname=""
     #$(curl https://ipapi.co/timezone)
+	script_dir="$(dirname "$(readlink -f "$0")")"
 }
 
 network_setup() {
@@ -38,7 +42,7 @@ install_sys() {
     reflector --verbose --latest 20 ---protocol https -sort rate --save /etc/pacman.d/mirrorlist
 
 	# pacstrap
-	sed -e "/^#/d" -e "s/#.*//" "${package_list}" | pacstrap /mnt -
+	sed -e "/^#/d" -e "s/#.*//" "${script_dir}/package_list/base/linux_minimal" | pacstrap /mnt -
 
 	# fstab
     genfstab -U /mnt >> /mnt/etc/fstab
