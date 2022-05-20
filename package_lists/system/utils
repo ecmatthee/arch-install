@@ -5,12 +5,10 @@ exa
 fd
 fzf
 ffmpeg
-gnupg
 hyperfine
 jq
 mat2
 neofetch
-openssh
 parted
 rclone
 reflector
