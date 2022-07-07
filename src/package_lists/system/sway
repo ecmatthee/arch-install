@@ -4,7 +4,8 @@ swaylock
 swayidle
 
 # Terminal Emulator
-kitty
+foot
+foot-terminfo
 tmux
 
 # Notification

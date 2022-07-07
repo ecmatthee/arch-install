@@ -9,6 +9,7 @@ hyperfine
 jq
 mat2
 neofetch
+onefetch
 parted
 rclone
 reflector
